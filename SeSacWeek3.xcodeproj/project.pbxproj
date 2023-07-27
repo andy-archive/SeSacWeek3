@@ -16,6 +16,7 @@
 		38D0F8712A720FF2003D3A1E /* TodoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38D0F8702A720FF2003D3A1E /* TodoTableViewController.swift */; };
 		38D0F8732A7232D9003D3A1E /* StudyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38D0F8722A7232D9003D3A1E /* StudyTableViewController.swift */; };
 		38D0F8772A72498B003D3A1E /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38D0F8762A72498B003D3A1E /* Extension.swift */; };
+		A12C2CA22A72B6EC00828038 /* Setting.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A12C2CA12A72B6EC00828038 /* Setting.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		38D0F8702A720FF2003D3A1E /* TodoTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoTableViewController.swift; sourceTree = "<group>"; };
 		38D0F8722A7232D9003D3A1E /* StudyTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyTableViewController.swift; sourceTree = "<group>"; };
 		38D0F8762A72498B003D3A1E /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		A12C2CA12A72B6EC00828038 /* Setting.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Setting.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 		38D0F85B2A720009003D3A1E /* SeSacWeek3 */ = {
 			isa = PBXGroup;
 			children = (
+				A12C2CA32A72B92E00828038 /* Assignments */,
 				38D0F8702A720FF2003D3A1E /* TodoTableViewController.swift */,
 				38D0F8722A7232D9003D3A1E /* StudyTableViewController.swift */,
 				38D0F85C2A720009003D3A1E /* AppDelegate.swift */,
@@ -74,6 +77,14 @@
 				38D0F86A2A72000A003D3A1E /* Info.plist */,
 			);
 			path = SeSacWeek3;
+			sourceTree = "<group>";
+		};
+		A12C2CA32A72B92E00828038 /* Assignments */ = {
+			isa = PBXGroup;
+			children = (
+				A12C2CA12A72B6EC00828038 /* Setting.storyboard */,
+			);
+			path = Assignments;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,6 +148,7 @@
 				38D0F8692A72000A003D3A1E /* LaunchScreen.storyboard in Resources */,
 				38D0F8662A72000A003D3A1E /* Assets.xcassets in Resources */,
 				38D0F8642A720009003D3A1E /* Main.storyboard in Resources */,
+				A12C2CA22A72B6EC00828038 /* Setting.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
