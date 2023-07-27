@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="yob-eA-1Lp">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Ljv-da-mHM">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
@@ -22,7 +22,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-407" y="134"/>
+            <point key="canvasLocation" x="-353" y="-2"/>
         </scene>
         <!--집중 모드-->
         <scene sceneID="TT5-VK-AjU">
@@ -189,7 +189,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="R0T-KJ-xnM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1875.5725190839694" y="-2.1126760563380285"/>
+            <point key="canvasLocation" x="2802.2900763358775" y="-2.1126760563380285"/>
         </scene>
         <!--설정-->
         <scene sceneID="bW1-N7-4xA">
@@ -218,12 +218,42 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="90a-Ex-vsF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1876" y="675"/>
+            <point key="canvasLocation" x="2801" y="675"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--쇼핑-->
+        <scene sceneID="z2f-2f-OqW">
+            <objects>
+                <tableViewController id="DlP-WN-fDd" customClass="SettingTableViewController" customModule="SeSacWeek3" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="jQy-OX-wqM">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="CSH-ml-a2E">
+                                <rect key="frame" x="0.0" y="50" width="393" height="43.666667938232422"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="CSH-ml-a2E" id="fVd-9u-hwE">
+                                    <rect key="frame" x="0.0" y="0.0" width="393" height="43.666667938232422"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="DlP-WN-fDd" id="M44-zB-NDZ"/>
+                            <outlet property="delegate" destination="DlP-WN-fDd" id="VTX-Lh-1RO"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="쇼핑" id="Res-k0-n3J"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ECM-yp-UY3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2801" y="1376"/>
+        </scene>
+        <!--집중 모드-->
         <scene sceneID="Yfb-e2-mf8">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Vse-RI-phe" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="집중 모드" image="moon.fill" catalog="system" id="mTO-mz-3gn"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="0PE-UX-KqZ">
                         <rect key="frame" x="0.0" y="59" width="393" height="44"/>
@@ -236,12 +266,13 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ru1-Jk-HNQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="948.85496183206101" y="-2.1126760563380285"/>
+            <point key="canvasLocation" x="1875.5725190839694" y="-2.1126760563380285"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--설정-->
         <scene sceneID="QAK-DP-fu3">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="yob-eA-1Lp" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="설정" image="gearshape.fill" catalog="system" id="h8Q-iH-VEN"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="HQp-td-Vyk">
                         <rect key="frame" x="0.0" y="59" width="393" height="44"/>
@@ -254,11 +285,51 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AMM-RV-19l" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="949" y="675"/>
+            <point key="canvasLocation" x="1876" y="675"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="wJP-DO-0CC">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="Ljv-da-mHM" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="DvK-dA-PtV">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="Vse-RI-phe" kind="relationship" relationship="viewControllers" id="CdY-xk-5w1"/>
+                        <segue destination="yob-eA-1Lp" kind="relationship" relationship="viewControllers" id="ugu-mP-d2J"/>
+                        <segue destination="vHP-8P-Hmt" kind="relationship" relationship="viewControllers" id="2Gc-hJ-hzw"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="G2u-mv-XOW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="860" y="675"/>
+        </scene>
+        <!--쇼핑-->
+        <scene sceneID="E8d-Yf-jjQ">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="vHP-8P-Hmt" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="쇼핑" image="cart.fill" catalog="system" id="SDY-9Z-yFN"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="LIA-K9-IDf">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="DlP-WN-fDd" kind="relationship" relationship="rootViewController" id="sAP-Uv-hsJ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="t7W-Qb-CJ2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1876" y="1376"/>
         </scene>
     </scenes>
     <resources>
         <image name="bed.double.fill" catalog="system" width="128" height="82"/>
+        <image name="cart.fill" catalog="system" width="128" height="102"/>
+        <image name="gearshape.fill" catalog="system" width="128" height="123"/>
         <image name="iphone.gen2" catalog="system" width="112" height="128"/>
         <image name="moon.fill" catalog="system" width="128" height="123"/>
         <image name="person.fill" catalog="system" width="128" height="120"/>
