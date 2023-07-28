@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		389E08B02A73504F003D1EF7 /* CustomTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 389E08AF2A73504F003D1EF7 /* CustomTableViewController.swift */; };
+		389E08B22A73528E003D1EF7 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 389E08B12A73528E003D1EF7 /* CustomTableViewCell.swift */; };
 		38D0F85D2A720009003D3A1E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38D0F85C2A720009003D3A1E /* AppDelegate.swift */; };
 		38D0F85F2A720009003D3A1E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38D0F85E2A720009003D3A1E /* SceneDelegate.swift */; };
 		38D0F8612A720009003D3A1E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38D0F8602A720009003D3A1E /* ViewController.swift */; };
@@ -22,6 +24,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		389E08AF2A73504F003D1EF7 /* CustomTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewController.swift; sourceTree = "<group>"; };
+		389E08B12A73528E003D1EF7 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 		38D0F8592A720009003D3A1E /* SeSacWeek3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SeSacWeek3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		38D0F85C2A720009003D3A1E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		38D0F85E2A720009003D3A1E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -53,6 +57,8 @@
 			isa = PBXGroup;
 			children = (
 				38D0F8622A720009003D3A1E /* Main.storyboard */,
+				389E08AF2A73504F003D1EF7 /* CustomTableViewController.swift */,
+				389E08B12A73528E003D1EF7 /* CustomTableViewCell.swift */,
 				38D0F8702A720FF2003D3A1E /* TodoTableViewController.swift */,
 				38D0F8722A7232D9003D3A1E /* StudyTableViewController.swift */,
 				38D0F8762A72498B003D3A1E /* Extension.swift */,
@@ -179,7 +185,9 @@
 				38D0F8712A720FF2003D3A1E /* TodoTableViewController.swift in Sources */,
 				38D0F8732A7232D9003D3A1E /* StudyTableViewController.swift in Sources */,
 				38D0F8772A72498B003D3A1E /* Extension.swift in Sources */,
+				389E08B22A73528E003D1EF7 /* CustomTableViewCell.swift in Sources */,
 				38D0F85D2A720009003D3A1E /* AppDelegate.swift in Sources */,
+				389E08B02A73504F003D1EF7 /* CustomTableViewController.swift in Sources */,
 				38D0F85F2A720009003D3A1E /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
