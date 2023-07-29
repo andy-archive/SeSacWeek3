@@ -90,6 +90,7 @@
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
+                                    <outlet property="movieBackgroundView" destination="Hhd-nH-cBp" id="F8Y-IZ-vpS"/>
                                     <outlet property="movieImageView" destination="f9n-fP-cP3" id="fpW-NB-jY3"/>
                                     <outlet property="movieInfoLabel" destination="2Dw-pk-vIQ" id="XVp-fT-Rc9"/>
                                     <outlet property="movieOverviewLabel" destination="Bew-02-FVY" id="90u-QX-3pC"/>

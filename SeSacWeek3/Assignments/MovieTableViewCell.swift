@@ -11,6 +11,7 @@ class MovieTableViewCell: UITableViewCell {
 
     static let identifier = "movieCell"
     
+    @IBOutlet weak var movieBackgroundView: UIView!
     @IBOutlet weak var movieImageView: UIImageView!
     @IBOutlet weak var movieTitleLabel: UILabel!
     @IBOutlet weak var movieInfoLabel: UILabel!
@@ -22,6 +23,10 @@ class MovieTableViewCell: UITableViewCell {
         movieOverviewLabel.text = row.overview
 
         movieOverviewLabel.numberOfLines = 0
+        
+        movieBackgroundView.backgroundColor = .white
+        movieTitleLabel.backgroundColor = .white
+        movieInfoLabel.backgroundColor = .white
+        movieOverviewLabel.backgroundColor = .white
     }
-
 }
