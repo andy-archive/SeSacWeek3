@@ -67,10 +67,10 @@
 				38D0F8622A720009003D3A1E /* Main.storyboard */,
 				389E08AF2A73504F003D1EF7 /* CustomTableViewController.swift */,
 				389E08B12A73528E003D1EF7 /* CustomTableViewCell.swift */,
-				389E08B32A7389C9003D1EF7 /* ToDo.swift */,
 				38D0F8702A720FF2003D3A1E /* TodoTableViewController.swift */,
-				389E08B52A738A1C003D1EF7 /* ToDoInformation.swift */,
 				38D0F8722A7232D9003D3A1E /* StudyTableViewController.swift */,
+				389E08B52A738A1C003D1EF7 /* ToDoInformation.swift */,
+				389E08B32A7389C9003D1EF7 /* ToDo.swift */,
 				38D0F8762A72498B003D3A1E /* Extension.swift */,
 			);
 			path = Lectures;
