@@ -225,6 +225,9 @@
                                             <color key="backgroundColor" systemColor="systemOrangeColor"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                             <textInputTraits key="textInputTraits"/>
+                                            <connections>
+                                                <action selector="didEndTextField:" destination="DlP-WN-fDd" eventType="editingDidEndOnExit" id="ixr-HL-32Z"/>
+                                            </connections>
                                         </textField>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5H7-wF-VpT">
                                             <rect key="frame" x="305" y="0.0" width="64" height="36"/>

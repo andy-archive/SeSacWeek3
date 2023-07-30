@@ -15,27 +15,23 @@ class ShoppingTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        tableView.rowHeight = 80
+        configureTable()
     }
-
+    
+    @IBAction func didEndTextField(_ sender: UITextField) {
+    }
+    
     @IBAction func addButtonTapped(_ sender: UIButton) {
-        
         guard let inputWord = shoppingTextField.text, inputWord.isEmpty == false else {
-            let alert = UIAlertController(title: "글자 수가 모자랍니다.", message: "1자 이상 입력하세요!", preferredStyle: .alert)
-            let ok = UIAlertAction(title: "확인", style: .default)
-            
-            alert.addAction(ok)
-            
-            present(alert, animated: true)
+            showInputAlert()
             return
         }
-        
-        shoppingTextField.text = ""
         
         shopping.list.append(
             Shopping(isChecked: false, title: inputWord, isLiked: false)
         )
+        
+        shoppingTextField.text = ""
         
         tableView.reloadData()
     }
@@ -49,10 +45,29 @@ class ShoppingTableViewController: UITableViewController {
             print("ERROR")
             return UITableViewCell()
         }
+        
         let row = shopping.list[indexPath.row]
         
         cell.configureCell(row: row)
         
         return cell
+    }
+}
+
+extension ShoppingTableViewController {
+    func showInputAlert() {
+        let alert = UIAlertController(title: "글자 수가 모자랍니다.", message: "1자 이상 입력하세요!", preferredStyle: .alert)
+        let ok = UIAlertAction(title: "확인", style: .default)
+        
+        alert.addAction(ok)
+        
+        present(alert, animated: true)
+        
+        return
+    }
+    
+    func configureTable() {
+        tableView.keyboardDismissMode = .onDrag
+        tableView.rowHeight = 80
     }
 }
