@@ -9,12 +9,35 @@ import UIKit
 
 class ShoppingTableViewController: UITableViewController {
 
-    let shopping = ShoppingInfo()
+    var shopping = ShoppingInfo()
+    
+    @IBOutlet weak var shoppingTextField: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         tableView.rowHeight = 80
+    }
+
+    @IBAction func addButtonTapped(_ sender: UIButton) {
+        
+        guard let inputWord = shoppingTextField.text, inputWord.isEmpty == false else {
+            let alert = UIAlertController(title: "글자 수가 모자랍니다.", message: "1자 이상 입력하세요!", preferredStyle: .alert)
+            let ok = UIAlertAction(title: "확인", style: .default)
+            
+            alert.addAction(ok)
+            
+            present(alert, animated: true)
+            return
+        }
+        
+        shoppingTextField.text = ""
+        
+        shopping.list.append(
+            Shopping(isChecked: false, title: inputWord, isLiked: false)
+        )
+        
+        tableView.reloadData()
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

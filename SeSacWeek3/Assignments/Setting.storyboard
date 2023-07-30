@@ -234,6 +234,9 @@
                                             </constraints>
                                             <state key="normal" title="Button"/>
                                             <buttonConfiguration key="configuration" style="plain" title="추가"/>
+                                            <connections>
+                                                <action selector="addButtonTapped:" destination="DlP-WN-fDd" eventType="touchUpInside" id="fLn-xh-KGl"/>
+                                            </connections>
                                         </button>
                                     </subviews>
                                     <constraints>
@@ -323,6 +326,9 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="쇼핑" id="Res-k0-n3J"/>
+                    <connections>
+                        <outlet property="shoppingTextField" destination="HZE-ow-v3c" id="NdE-OX-UhG"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ECM-yp-UY3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
