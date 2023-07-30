@@ -28,6 +28,9 @@
 		A12C2CA22A72B6EC00828038 /* Setting.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A12C2CA12A72B6EC00828038 /* Setting.storyboard */; };
 		A12C2CA52A72C31200828038 /* SettingTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A12C2CA42A72C31200828038 /* SettingTableViewController.swift */; };
 		A12C2CA92A72D9EC00828038 /* ShoppingTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A12C2CA82A72D9EC00828038 /* ShoppingTableViewController.swift */; };
+		A1720C262A76546500AABAF0 /* ShoppingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1720C252A76546500AABAF0 /* ShoppingTableViewCell.swift */; };
+		A1720C282A76561A00AABAF0 /* ShoppingInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1720C272A76561A00AABAF0 /* ShoppingInfo.swift */; };
+		A1720C2A2A76564A00AABAF0 /* Shopping.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1720C292A76564A00AABAF0 /* Shopping.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +57,9 @@
 		A12C2CA12A72B6EC00828038 /* Setting.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Setting.storyboard; sourceTree = "<group>"; };
 		A12C2CA42A72C31200828038 /* SettingTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingTableViewController.swift; sourceTree = "<group>"; };
 		A12C2CA82A72D9EC00828038 /* ShoppingTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingTableViewController.swift; sourceTree = "<group>"; };
+		A1720C252A76546500AABAF0 /* ShoppingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingTableViewCell.swift; sourceTree = "<group>"; };
+		A1720C272A76561A00AABAF0 /* ShoppingInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingInfo.swift; sourceTree = "<group>"; };
+		A1720C292A76564A00AABAF0 /* Shopping.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shopping.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,11 +123,14 @@
 			isa = PBXGroup;
 			children = (
 				A12C2CA12A72B6EC00828038 /* Setting.storyboard */,
+				A1720C252A76546500AABAF0 /* ShoppingTableViewCell.swift */,
+				A12C2CA82A72D9EC00828038 /* ShoppingTableViewController.swift */,
+				A1720C272A76561A00AABAF0 /* ShoppingInfo.swift */,
+				A1720C292A76564A00AABAF0 /* Shopping.swift */,
 				389E08B82A749850003D1EF7 /* Movie.storyboard */,
 				389E08C12A74BB30003D1EF7 /* MovieTableViewCell.swift */,
 				389E08BA2A749AE3003D1EF7 /* MovieTableViewController.swift */,
 				A12C2CA42A72C31200828038 /* SettingTableViewController.swift */,
-				A12C2CA82A72D9EC00828038 /* ShoppingTableViewController.swift */,
 				389E08BD2A74B994003D1EF7 /* MovieInfo.swift */,
 				389E08BF2A74B9B0003D1EF7 /* Movie.swift */,
 			);
@@ -201,6 +210,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1720C262A76546500AABAF0 /* ShoppingTableViewCell.swift in Sources */,
+				A1720C2A2A76564A00AABAF0 /* Shopping.swift in Sources */,
 				389E08BE2A74B994003D1EF7 /* MovieInfo.swift in Sources */,
 				A12C2CA52A72C31200828038 /* SettingTableViewController.swift in Sources */,
 				A12C2CA92A72D9EC00828038 /* ShoppingTableViewController.swift in Sources */,
@@ -213,6 +224,7 @@
 				38D0F8772A72498B003D3A1E /* Extension.swift in Sources */,
 				389E08BB2A749AE3003D1EF7 /* MovieTableViewController.swift in Sources */,
 				389E08B22A73528E003D1EF7 /* CustomTableViewCell.swift in Sources */,
+				A1720C282A76561A00AABAF0 /* ShoppingInfo.swift in Sources */,
 				38D0F85D2A720009003D3A1E /* AppDelegate.swift in Sources */,
 				389E08B02A73504F003D1EF7 /* CustomTableViewController.swift in Sources */,
 				38D0F85F2A720009003D3A1E /* SceneDelegate.swift in Sources */,
