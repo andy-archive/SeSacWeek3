@@ -29,6 +29,9 @@ class CustomTableViewController: UITableViewController {
         
         cell.configureCell(row: row)
         
+        cell.likeButton.tag = indexPath.row
+        cell.likeButton.addTarget(self, action: #selector(likeButtonClicked), for: .touchUpInside)
+        
         return cell
     }
     
@@ -49,6 +52,19 @@ class CustomTableViewController: UITableViewController {
         todo.list.remove(at: indexPath.row)
         
         /// 2) 업데이트
+        tableView.reloadData()
+    }
+}
+
+extension CustomTableViewController {
+    @objc func likeButtonClicked(_ sender: UIButton) {
+
+        //print(#function, "&& TAG: \(sender.tag)")
+        
+        /// 구조체의 list 프로퍼티의 인덱스를 접근하여 toggle()로 Bool 변경
+        todo.list[sender.tag].isLiked.toggle()
+        
+        /// 화면 다시 나타내기
         tableView.reloadData()
     }
 }
