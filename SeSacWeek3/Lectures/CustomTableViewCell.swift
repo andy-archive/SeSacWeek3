@@ -12,10 +12,11 @@ class CustomTableViewCell: UITableViewCell {
     static let identifier = "customCell"
     
     @IBOutlet weak var cellBackgroundVIew: UIView!
-    @IBOutlet weak var checkboxImageView: UIImageView!
     
     @IBOutlet weak var mainTitleLabel: UILabel!
     @IBOutlet weak var subTitleLabel: UILabel!
+    
+    @IBOutlet weak var checkButton: UIButton!
     @IBOutlet weak var likeButton: UIButton!
     
     func configureCell(row: ToDo) {
@@ -23,9 +24,9 @@ class CustomTableViewCell: UITableViewCell {
         subTitleLabel.text = row.subTitle
         
         if row.isDone {
-            checkboxImageView.image = UIImage(systemName: "checkmark.square.fill")
+            checkButton.setImage(UIImage(systemName: "checkmark.square.fill"), for: .normal)
         } else {
-            checkboxImageView.image = UIImage(systemName: "checkmark.square")
+            checkButton.setImage(UIImage(systemName: "checkmark.square"), for: .normal)
         }
         
         if row.isLiked {

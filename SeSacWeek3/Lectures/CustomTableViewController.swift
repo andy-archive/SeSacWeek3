@@ -39,7 +39,10 @@ class CustomTableViewController: UITableViewController {
         cell.configureCell(row: row)
         
         cell.likeButton.tag = indexPath.row
+        cell.checkButton.tag = indexPath.row
+        
         cell.likeButton.addTarget(self, action: #selector(likeButtonClicked), for: .touchUpInside)
+        cell.checkButton.addTarget(self, action: #selector(checkButtonClicked), for: .touchUpInside)
         
         return cell
     }
@@ -73,6 +76,10 @@ extension CustomTableViewController {
         
         /// 화면 다시 나타내기
         //tableView.reloadData()
+    }
+    
+    @objc func checkButtonClicked(_ sender: UIButton) {
+        todo.list[sender.tag].isDone.toggle()
     }
     
     @objc func searchBarReturnTapped() {
