@@ -9,12 +9,21 @@ import UIKit
 
 class CustomTableViewController: UITableViewController {
     
-    var todo = TodoInformation()
+    @IBOutlet weak var searchBar: UISearchBar!
+    
+    var todo = TodoInformation() {
+        didSet { /// 변수가 달라지면 호출
+            //print("todo의 didSet 호출")
+            tableView.reloadData()
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         tableView.rowHeight = 80
+        searchBar.placeholder = "할 일을 입력하세요."
+        searchBar.searchTextField.addTarget(self, action: #selector(searchBarReturnTapped), for: .editingDidEndOnExit)
     }
     
     //1. 섹션의 셀 개수
@@ -37,7 +46,7 @@ class CustomTableViewController: UITableViewController {
     
     //3. 셀 선택
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print(indexPath)
+        print("indexPath: \(indexPath)")
     }
     
     /// 제거 가능 상태 허용
@@ -52,19 +61,34 @@ class CustomTableViewController: UITableViewController {
         todo.list.remove(at: indexPath.row)
         
         /// 2) 업데이트
-        tableView.reloadData()
+        //tableView.reloadData()
     }
 }
 
 extension CustomTableViewController {
     @objc func likeButtonClicked(_ sender: UIButton) {
-
-        //print(#function, "&& TAG: \(sender.tag)")
         
         /// 구조체의 list 프로퍼티의 인덱스를 접근하여 toggle()로 Bool 변경
         todo.list[sender.tag].isLiked.toggle()
         
         /// 화면 다시 나타내기
-        tableView.reloadData()
+        //tableView.reloadData()
+    }
+    
+    @objc func searchBarReturnTapped() {
+        
+        /// 1. TodoInformation.list에 TextField의 값을 추가
+        let data = ToDo(mainTitle: searchBar.text!, subTitle: "TODAY", isLiked: false, isDone: false)
+        
+        /// 1-1. append()
+        /// todo.list.append(<#T##newElement: ToDo##ToDo#>)
+        /// 1-2. insert()
+        todo.list.insert(data, at: 0)
+        
+        /// (+) UX ==> 버튼 클릭 시 빈 문자열로 업데이트
+        searchBar.text = ""
+
+        /// 2. view reload
+        //tableView.reloadData()
     }
 }

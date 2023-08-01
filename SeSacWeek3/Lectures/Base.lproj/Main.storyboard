@@ -461,9 +461,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <searchBar key="tableHeaderView" contentMode="redraw" id="GxF-Nj-jgb">
+                            <rect key="frame" x="0.0" y="0.0" width="393" height="44"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <textInputTraits key="textInputTraits"/>
+                            <connections>
+                                <outlet property="delegate" destination="bmm-wi-KaY" id="kBm-GP-zOO"/>
+                            </connections>
+                        </searchBar>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="customCell" rowHeight="102" id="UN7-mN-0Pl" customClass="CustomTableViewCell" customModule="SeSacWeek3" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="50" width="393" height="102"/>
+                                <rect key="frame" x="0.0" y="94" width="393" height="102"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="UN7-mN-0Pl" id="QZc-aW-RfZ">
                                     <rect key="frame" x="0.0" y="0.0" width="393" height="102"/>
@@ -545,6 +553,9 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="eo1-IV-iDb"/>
+                    <connections>
+                        <outlet property="searchBar" destination="GxF-Nj-jgb" id="4l8-ab-Ngt"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VNO-8Y-ejd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -576,6 +587,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="r7W-SE-xdL" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="CWS-hN-VlC">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
