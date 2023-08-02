@@ -13,7 +13,6 @@ class CustomTableViewController: UITableViewController {
     
     var todo = TodoInformation() {
         didSet { /// 변수가 달라지면 호출
-            //print("todo의 didSet 호출")
             tableView.reloadData()
         }
     }
@@ -49,7 +48,7 @@ class CustomTableViewController: UITableViewController {
     
     //3. 셀 선택
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print("indexPath: \(indexPath)")
+        //print("indexPath: \(indexPath)")
     }
     
     /// 제거 가능 상태 허용
@@ -85,7 +84,7 @@ extension CustomTableViewController {
     @objc func searchBarReturnTapped() {
         
         /// 1. TodoInformation.list에 TextField의 값을 추가
-        let data = ToDo(mainTitle: searchBar.text!, subTitle: "TODAY", isLiked: false, isDone: false)
+        let data = ToDo(mainTitle: searchBar.text!, subTitle: "TODAY", isLiked: false, isDone: false, color: TodoInformation.getBackColor())
         
         /// 1-1. append()
         /// todo.list.append(<#T##newElement: ToDo##ToDo#>)

@@ -11,7 +11,7 @@ class CustomTableViewCell: UITableViewCell {
     
     static let identifier = "customCell"
     
-    @IBOutlet weak var cellBackgroundVIew: UIView!
+    @IBOutlet weak var backView: UIView!
     
     @IBOutlet weak var mainTitleLabel: UILabel!
     @IBOutlet weak var subTitleLabel: UILabel!
@@ -20,6 +20,8 @@ class CustomTableViewCell: UITableViewCell {
     @IBOutlet weak var likeButton: UIButton!
     
     func configureCell(row: ToDo) {
+        backView.backgroundColor = row.color
+        
         mainTitleLabel.text = row.mainTitle
         subTitleLabel.text = row.subTitle
         

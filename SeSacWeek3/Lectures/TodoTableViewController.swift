@@ -22,7 +22,7 @@ class TodoTableViewController: UITableViewController {
         
         // 1. list에 요소를 추가
         list.append("study append method in Swift")
-        print(list) // for test
+        //print(list) // for test
         
         // 2. 테이블 뷰 업데이트
         tableView.reloadData()

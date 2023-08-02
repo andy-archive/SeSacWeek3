@@ -544,7 +544,7 @@
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <outlet property="cellBackgroundVIew" destination="Kvo-4j-kKl" id="hIB-gd-2Sa"/>
+                                    <outlet property="backView" destination="Kvo-4j-kKl" id="hIB-gd-2Sa"/>
                                     <outlet property="checkButton" destination="a9D-vQ-kgJ" id="tWF-CK-Bsp"/>
                                     <outlet property="likeButton" destination="zkf-ea-kIp" id="xpF-aC-BIH"/>
                                     <outlet property="mainTitleLabel" destination="rZZ-4k-ran" id="W2L-Rx-P8O"/>
