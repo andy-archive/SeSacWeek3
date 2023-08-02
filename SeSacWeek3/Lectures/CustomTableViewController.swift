@@ -48,7 +48,18 @@ class CustomTableViewController: UITableViewController {
     
     //3. 셀 선택
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        //print("indexPath: \(indexPath)")
+        
+        guard let vc = storyboard?.instantiateViewController(withIdentifier: "DetailViewController") as? DetailViewController else {
+            print("ERROR")
+            return
+        }
+        
+        vc.data = todo.list[indexPath.row]
+        
+        present(vc, animated: true)
+        
+        tableView.reloadRows(at: [indexPath], with: .none)
+
     }
     
     /// 제거 가능 상태 허용
